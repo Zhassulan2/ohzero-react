@@ -68,6 +68,13 @@ export function HomePage({
       </Helmet>
       <div>
         <CenteredSection>
+          <div className="w3-container">
+            <p>
+              Washed Skinny Jeans
+              <br />
+              <b>$20.50</b>
+            </p>
+          </div>
           <H2>
             <FormattedMessage {...messages.startProjectHeader} />
           </H2>
