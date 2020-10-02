@@ -50,7 +50,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <A href="https://www.reactboilerplate.com/">
+      <A href="https://wa.me/7774449731?text=ГлавнаяКартина">
         <Img src={Banner} alt="react-boilerplate - Logo" />
       </A>
       <NavBar>

@@ -20,7 +20,11 @@ export default function FeaturePage() {
         <title>Feature Page</title>
         <meta
           name="description"
-          content="Feature page of React.js Boilerplate application"
+          content="baseus, baseus официальный сайт, xiaomi, xiaomi официальный сайт"
+        />
+        <meta
+          name="keywords"
+          content="baseus, baseus официальный сайт, xiaomi, xiaomi официальный сайт"
         />
       </Helmet>
       <H1>

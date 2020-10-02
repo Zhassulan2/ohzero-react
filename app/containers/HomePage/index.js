@@ -21,6 +21,9 @@ import {
 } from 'containers/App/selectors';
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
+import A from 'components/A';
+import Img from 'components/Img';
+import Banner from './jeans3.jpg';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
@@ -56,6 +59,7 @@ export function HomePage({
     error,
     repos,
   };
+  const widthPercent = '100%';
 
   return (
     <article>
@@ -63,7 +67,11 @@ export function HomePage({
         <title>Home Page</title>
         <meta
           name="description"
-          content="A React.js Boilerplate application homepage"
+          content="baseus, baseus официальный сайт, xiaomi, xiaomi официальный сайт"
+        />
+        <meta
+          name="keywords"
+          content="baseus, baseus официальный сайт, xiaomi, xiaomi официальный сайт"
         />
       </Helmet>
       <div>
@@ -74,6 +82,9 @@ export function HomePage({
               <br />
               <b>$20.50</b>
             </p>
+          </div>
+          <div className="w3-container w3-text-grey" id="jeans">
+            <p>8 items</p>
           </div>
           <H2>
             <FormattedMessage {...messages.startProjectHeader} />
@@ -86,6 +97,121 @@ export function HomePage({
           <H2>
             <FormattedMessage {...messages.trymeHeader} />
           </H2>
+          <A href="https://wa.me/7774449731?text=ГлавнаяКартина">
+            <Img src={Banner} alt="react-boilerplate - Logo" />
+          </A>
+          <div className="w3-row w3-grayscale">
+            <div className="w3-col l3 s6">
+              <div className="w3-container">
+                <Img
+                  src={Banner}
+                  alt="react-boilerplate - Logo"
+                  style={{ width: widthPercent }}
+                />
+                <p>
+                  Ripped Skinny Jeans
+                  <br />
+                  <b>$24.99</b>
+                </p>
+              </div>
+              <div className="w3-container">
+                <Img
+                  src={Banner}
+                  alt="react-boilerplate - Logo"
+                  style={{ width: widthPercent }}
+                />
+                <p>
+                  Mega Ripped Jeans
+                  <br />
+                  <b>$19.99</b>
+                </p>
+              </div>
+            </div>
+            <div className="w3-col l3 s6">
+              <div className="w3-container">
+                <div className="w3-display-container">
+                  <Img
+                    src={Banner}
+                    alt="react-boilerplate - Logo"
+                    style={{ width: widthPercent }}
+                  />
+                </div>
+                <p>
+                  Mega Ripped Jeans
+                  <br />
+                  <b>$19.99</b>
+                </p>
+              </div>
+              <div className="w3-container">
+                <Img
+                  src={Banner}
+                  alt="react-boilerplate - Logo"
+                  style={{ width: widthPercent }}
+                />
+                <p>
+                  Washed Skinny Jeans
+                  <br />
+                  <b>$20.50</b>
+                </p>
+              </div>
+            </div>
+
+            <div className="w3-col l3 s6">
+              <div className="w3-container">
+                <Img
+                  src={Banner}
+                  alt="react-boilerplate - Logo"
+                  style={{ width: widthPercent }}
+                />
+                <p>
+                  Washed Skinny Jeans
+                  <br />
+                  <b>$20.50</b>
+                </p>
+              </div>
+              <div className="w3-container">
+                <div className="w3-display-container">
+                  <Img
+                    src={Banner}
+                    alt="react-boilerplate - Logo"
+                    style={{ width: widthPercent }}
+                  />
+                </div>
+                <p>
+                  Vintage Skinny Jeans
+                  <br />
+                  <b className="w3-text-red">$14.99</b>
+                </p>
+              </div>
+            </div>
+
+            <div className="w3-col l3 s6">
+              <div className="w3-container">
+                <Img
+                  src={Banner}
+                  alt="react-boilerplate - Logo"
+                  style={{ width: widthPercent }}
+                />
+                <p>
+                  Vintage Skinny Jeans
+                  <br />
+                  <b>$14.99</b>
+                </p>
+              </div>
+              <div className="w3-container">
+                <Img
+                  src={Banner}
+                  alt="react-boilerplate - Logo"
+                  style={{ width: widthPercent }}
+                />
+                <p>
+                  Ripped Skinny Jeans
+                  <br />
+                  <b>$24.99</b>
+                </p>
+              </div>
+            </div>
+          </div>
           <Form onSubmit={onSubmitForm}>
             <label htmlFor="username">
               <FormattedMessage {...messages.trymeMessage} />
